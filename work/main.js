@@ -173,3 +173,31 @@ function clickForText() {
 }
 
 clickForText();
+
+//Task22+23================================
+function switchText() {
+    var sText1 = document.getElementById('switch-text1');
+    var sText2 = document.getElementById('switch-text2');
+    var sButton = document.getElementById('switch-button');
+
+    function switchInputs() {
+        sText1.style.color = 'red';
+        sText2.style.color = 'blue';
+
+        return function() {
+            var val1 = sText1.value;
+            var val2 = sText2.value;
+            var col1 = sText1.style.color;
+            var col2 = sText2.style.color;
+
+            sText1.value = val2;
+            sText2.value = val1;
+            sText1.style.color = col2;
+            sText2.style.color = col1;
+        }
+    }
+
+    sButton.onclick = switchInputs();
+}
+
+switchText();
