@@ -157,9 +157,19 @@ function addButtonNames() {
     for (btnIndex = 0; btnIndex < prizes.length; btnIndex++) {
         document.getElementById('btn-' + btnIndex).onclick = addText(btnIndex);
     }
-
 }
 
-//addButtonNames();
+addButtonNames();
 
-//Task18================================
+//Task21================================
+function clickForText() {
+    function addInputText(text) {
+        return function() {
+            document.getElementById('text-input').value = text;
+        }
+    }
+
+    document.getElementById('text-button').onclick = addInputText('Custom text');
+}
+
+clickForText();
