@@ -34,7 +34,6 @@ function countFor() {
 //countFor();
 
 //Task8================================
-
 function capitals() {
     var obj = {
         'Оттава': 'Канада',
@@ -49,7 +48,6 @@ function capitals() {
 //capitals();
 
 //Task10================================
-//больше 3-х, но меньше 10.
 function numbersColumn() {
     var numbers = [2, 5, 9, 15, 0, 4];
     var i;
@@ -64,9 +62,6 @@ function numbersColumn() {
 //numbersColumn();
 
 //Task12================================
-// 1. Дан массив ['я', 'учу', 'javascript', '!'].
-// 2. С помощью метода join преобразуйте массив в строки 'я+учу+javascript+!' и 'я учу javascript !'.
-
 function iLearnJs() {
     var arr = ['я', 'учу', 'javascript', '!'];
 
@@ -75,3 +70,14 @@ function iLearnJs() {
 }
 
 //iLearnJs();
+
+//Task13================================
+function arraysJoin() {
+    var arr1 = ['a', 'b', 'c'];
+    var arr2 = [1, 2, 3];
+    var bigArr = arr1.concat(arr2);
+
+    console.log(bigArr);
+}
+
+arraysJoin();
