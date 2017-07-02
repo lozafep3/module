@@ -80,4 +80,24 @@ function arraysJoin() {
     console.log(bigArr);
 }
 
-arraysJoin();
+//arraysJoin();
+
+//Task13================================
+function arrayAdd() {
+    var arr = ['a', 'b', 'c'];
+    arr.push(1);
+    arr.push(2);
+    arr.push(3);
+
+    console.log(arr);
+}
+
+arrayAdd();
+
+//Task15================================
+
+// var arr = [1, 2, 3, 4, 5, 6 ];
+//
+// arr.forEach(function (i) {
+//     console.log(i);
+// });
