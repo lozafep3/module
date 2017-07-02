@@ -201,3 +201,18 @@ function switchText() {
 }
 
 switchText();
+
+//Task24================================
+function addInput() {
+    function add() {
+        return function() {
+            document.body.appendChild( document.createElement('input') );
+        }
+    }
+
+    document.getElementById('add-input').onclick = add();
+}
+
+addInput();
+
+//Task25================================
