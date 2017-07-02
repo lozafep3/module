@@ -216,3 +216,14 @@ function addInput() {
 addInput();
 
 //Task25================================
+function lostFocus() {
+    function getValue() {
+        return function() {
+            console.log( document.getElementById('focus-input').value );
+        }
+    }
+
+    document.getElementById('focus-input').onblur = getValue();
+}
+
+lostFocus();
