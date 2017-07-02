@@ -107,6 +107,37 @@ function asinc() {
     });
 }
 
-asinc();
+//asinc();
 
 //Task16================================
+//1. Что будет в console. Исправить. //TODO
+
+// function err() {
+//     (function() {
+//         var a = b = 5;
+//     })();
+//
+//     console.log(b);
+// }
+//
+// err();
+
+//Task17================================
+function findElement (arr, elem) {
+    var i;
+    var result;
+
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === elem) {
+            result = i;
+            break;
+        } else if (i > arr.length) {
+            result = 'Not found';
+            break;
+        }
+    }
+
+    return result;
+}
+
+console.log( findElement( [1, 2, 3, 4, 5], 4 ) );
