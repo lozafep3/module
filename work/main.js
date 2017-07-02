@@ -123,7 +123,7 @@ function asinc() {
 // err();
 
 //Task17================================
-function findElement (arr, elem) {
+function findElement(arr, elem) {
     var i;
     var result;
 
@@ -140,4 +140,26 @@ function findElement (arr, elem) {
     return result;
 }
 
-console.log( findElement( [1, 2, 3, 4, 5], 4 ) );
+//console.log( findElement( [1, 2, 3, 4, 5], 4 ) );
+
+//Task18================================
+function addButtonNames() {
+    var prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+    var btnIndex;
+
+    function addText(i) {
+        return function() {
+            //console.log(prizes[i]);
+            document.getElementById('btn-' + i).innerText = prizes[i];
+        };
+    }
+
+    for (btnIndex = 0; btnIndex < prizes.length; btnIndex++) {
+        document.getElementById('btn-' + btnIndex).onclick = addText(btnIndex);
+    }
+
+}
+
+//addButtonNames();
+
+//Task18================================
