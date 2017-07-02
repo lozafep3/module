@@ -61,6 +61,17 @@ function numbersColumn() {
     }
 }
 
-numbersColumn();
+//numbersColumn();
 
-//Task11================================
+//Task12================================
+// 1. Дан массив ['я', 'учу', 'javascript', '!'].
+// 2. С помощью метода join преобразуйте массив в строки 'я+учу+javascript+!' и 'я учу javascript !'.
+
+function iLearnJs() {
+    var arr = ['я', 'учу', 'javascript', '!'];
+
+    console.log( arr.join('+') );
+    console.log( arr.join(' ') );
+}
+
+//iLearnJs();
