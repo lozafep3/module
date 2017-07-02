@@ -92,12 +92,21 @@ function arrayAdd() {
     console.log(arr);
 }
 
-arrayAdd();
+//arrayAdd();
 
 //Task15================================
+function asinc() {
+    var arr = [1, 2, 3, 4, 5, 6];
 
-// var arr = [1, 2, 3, 4, 5, 6 ];
-//
-// arr.forEach(function (i) {
-//     console.log(i);
-// });
+    function callback(i) {
+        console.log(i);
+    }
+
+    arr.forEach(function (i) {
+        setTimeout(callback(i), 0);
+    });
+}
+
+asinc();
+
+//Task16================================
