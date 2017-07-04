@@ -110,17 +110,17 @@ function asinc() {
 //asinc();
 
 //Task16================================
-//1. Что будет в console. Исправить. //TODO
 
-// function err() {
-//     (function() {
-//         var a = b = 5;
-//     })();
-//
-//     console.log(b);
-// }
-//
-// err();
+function err() {
+    (function() {
+        var a = 5;
+        return b = a;
+    })();
+
+    console.log(b); // = 5
+}
+
+err();
 
 //Task17================================
 function findElement(arr, elem) {
